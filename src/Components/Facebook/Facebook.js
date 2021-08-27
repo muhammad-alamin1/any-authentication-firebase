@@ -12,7 +12,7 @@ if (!firebase.apps.length) {
     firebase.app();
 }
 const Facebook = () => {
-    const[user, setUser] = useContext(userContext);
+    const [user, setUser] = useContext(userContext);
     const facebookProvider = new firebase.auth.FacebookAuthProvider();
     const handleFacebookSignIn = () => {
         firebase
